@@ -1,23 +1,60 @@
-# Reaction Challenge
+# Reaction Challenge — Android App
 
-Proyecto Android en Java/XML para un juego de reacción y atención.
+Android game focused on reaction speed and attention, built with Java and XML.
 
-## Incluye
-- Login local por nombre de jugador
-- Modo normal, inverso y variantes dinámicas
-- Configuración separada para sonidos, vibración y música
-- Persistencia local con SQLite y SharedPreferences
-- Ranking individual y ranking local general
-- Reglas automáticas por dificultad
-- Mezcla de estímulos de colores, números y palabras
-- Navegación inferior fija una vez que el usuario inicia sesión
+The application provides multiple game modes, configurable difficulty, local persistence, and player rankings.
 
-## Abrir en Android Studio
-1. Abrir la carpeta raíz del proyecto.
-2. Esperar sincronización de Gradle.
-3. Ejecutar en emulador o dispositivo.
+## Features
 
-## Notas
-- El modo entrenamiento no guarda resultados.
-- La música usa un loop local incluido en el proyecto.
-- Los datos quedan guardados localmente en el dispositivo.
+- Local player login
+- Normal, inverse, and dynamic game modes
+- Color, number, and word stimuli
+- Configurable sound, vibration, and music
+- Difficulty-based game rules
+- Individual ranking
+- Local global ranking
+- Training mode
+- Persistent settings and results
+
+Training mode does not store results.
+
+## Tech Stack
+
+- Java
+- Android SDK
+- XML layouts
+- SQLite
+- SharedPreferences
+- AndroidX
+- Material Components
+- Gradle
+
+## Requirements
+
+- Android Studio
+- Android SDK 34 or newer
+- Android 7.0 / API 24 or newer
+
+## Running the Project
+
+1. Open the repository root in Android Studio.
+2. Wait for Gradle synchronization to finish.
+3. Run the application on an emulator or Android device.
+
+You can also build the debug APK with:
+
+```bash
+./gradlew assembleDebug
+```
+
+On Windows:
+
+```bash
+gradlew.bat assembleDebug
+```
+
+## Notes
+
+Player data and settings are stored locally on the device.
+
+The application also includes a local audio loop used as background music.
